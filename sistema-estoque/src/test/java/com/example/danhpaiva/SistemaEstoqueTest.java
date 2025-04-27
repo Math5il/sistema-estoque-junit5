@@ -78,6 +78,18 @@ public class SistemaEstoqueTest {
     sistemaEstoque.adicionarProduto("headset", 3);
     assertFalse(sistemaEstoque.verificarDisponibilidade("headset", 5));
   }
+  // teste que remove produto quando estoque e zerado
+  @Test
+  public void testRemoverProdutoQuandoZeraEstoque(){
+    sistemaEstoque.adicionarProduto("powerbank", 10);
+    sistemaEstoque.removerProduto("powerbank", 10);
+    assertEquals(0,sistemaEstoque.consultarEstoque("powerbank"));
+  }
+  // teste que trata o erro de quando o sistema consulta um produto com nome vazio
+  @Test(expected = IllegalArgumentException.class)
+    public void testConsultarEstoqueNomeVazio() {
+        sistemaEstoque.consultarEstoque("");
+  }
   @Test
   public void shouldAnswerWithTrue() {
     assertTrue(true);

@@ -1,3 +1,11 @@
+📌 Autores
+Raphael Angelo Mourão Fidelis - 32210565
+
+Kelly Cardoso Barbosa - 322129019
+
+Matheus Santos Silveira - 322128425
+
+Ranjer Danilo Prudencini Junior - 32213760
 # Sistema de Estoque
 Exemplo para avaliarmos a cobertura de testes de 0% a +70%
 
